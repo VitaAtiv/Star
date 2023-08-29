@@ -27,11 +27,35 @@
   <body>
     <fieldset class="rating">
       <legend class="rating-caption">Самопочуття</legend>
-      <input type="radio" name="health" value="1" aria-label="Жахливо" checked />
-      <input type="radio" name="health" value="2" aria-label="Задовільно"/>
-      <input type="radio" name="health" value="3" aria-label="Нормально"/>
-      <input type="radio" name="health" value="4" aria-label="Добре"/>
-      <input type="radio" name="health" value="5" aria-label="Відмінно"/>
+      <div class="rating-group">
+      <input class="rating-star" type="radio" name="health" value="1" aria-label="Жахливо" checked />
+      <input class="rating-star" type="radio" name="health" value="2" aria-label="Задовільно"/>
+      <input class="rating-star" type="radio" name="health" value="3" aria-label="Нормально"/>
+      <input class="rating-star" type="radio" name="health" value="4" aria-label="Добре"/>
+      <input class="rating-star" type="radio" name="health" value="5" aria-label="Відмінно"/>
+    </div>
+    </fieldset>
+
+    <fieldset class="rating">
+      <legend class="rating-caption">Настрій</legend>
+      <div class="rating-group">
+        <input class="rating-star" type="radio" name="mood" value="1" aria-label="Жахливо"/>
+      <input class="rating-star" type="radio" name="mood" value="2" aria-label="Задовільно"/>
+      <input class="rating-star" type="radio" name="mood" value="3" aria-label="Нормально" checked />
+      <input class="rating-star" type="radio" name="mood" value="4" aria-label="Добре"/>
+      <input class="rating-star" type="radio" name="mood" value="5" aria-label="Відмінно"/>
+    </div>
+    </fieldset>
+
+    <fieldset class="rating">
+      <legend class="rating-caption">Взагалі</legend>
+      <div class="rating-group">
+        <input class="rating-star" type="radio" name="general" value="1" aria-label="Жахливо"/>
+      <input class="rating-star" type="radio" name="general" value="2" aria-label="Задовільно"/>
+      <input class="rating-star" type="radio" name="general" value="3" aria-label="Нормально"/>
+      <input class="rating-star" type="radio" name="general" value="4" aria-label="Добре"/>
+      <input class="rating-star" type="radio" name="general" value="5" aria-label="Відмінно" checked />
+    </div>
     </fieldset>
 
     <script src="./index.js"></script>
