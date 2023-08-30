@@ -34,25 +34,40 @@ padding: 0;
     position: relative;
     width: 10em;
     height: 2em;
+    background-image: url(../image/off.svg);
+    background-size: 2em auto;
+    background-repeat: repeat-x;
 }
 /* Star */
 .rating-star {
     position: absolute;
     top: 0;
     left: 0;
-    width: 2em;
+    margin: 0;
     height: 2em;
-    background-color: darkgray;
+    background-size: 2em auto;
+    background-repeat: repeat-x;
+    font-size: inherit;
+    /* background-color: darkgray; */
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none; 
 }
+
+.rating-star:focus {
+    outline: none;
+}
+
+.rating-star:checked {
+    background-image: url(../image/on.svg);
+}
+
 /* Options */
-/* .rating-star:nth-of-type(1) {
+.rating-star:nth-of-type(1) {
     z-index: 5;
     width: 2em;
 }
- 
+
 .rating-star:nth-of-type(2) {
     z-index: 4;
     width: 4em;
@@ -71,4 +86,4 @@ padding: 0;
 .rating-star:nth-of-type(5) {
     z-index: 1;
     width: 10em;
-}  */
+}  
