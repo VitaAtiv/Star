@@ -40,18 +40,19 @@ padding: 0;
     position: absolute;
     top: 0;
     left: 0;
+    width: 2em;
     height: 2em;
     background-color: darkgray;
-    -moz-appearance: none;
     -webkit-appearance: none;
-    appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
 }
 /* Options */
-.rating-star:nth-of-type(1) {
+/* .rating-star:nth-of-type(1) {
     z-index: 5;
     width: 2em;
 }
-
+ 
 .rating-star:nth-of-type(2) {
     z-index: 4;
     width: 4em;
@@ -70,4 +71,4 @@ padding: 0;
 .rating-star:nth-of-type(5) {
     z-index: 1;
     width: 10em;
-}
+}  */
