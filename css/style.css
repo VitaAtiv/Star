@@ -13,6 +13,116 @@
   } 
    */
 
+/* body {
+    margin: 0;
+    padding: 25px;
+    font-family: sans-serif;
+}
+     
+.rating {
+margin: 0 0 1em 0;
+padding: 0;
+border: none;
+}
+
+.rating-caption {
+margin-bottom: 0.5em;
+padding: 0;
+} */
+/* Group */
+/* .rating-group {
+    position: relative;
+    width: 10em;
+    height: 2em;
+    background-image: url(../image/off.svg);
+    background-size: 2em auto;
+    background-repeat: repeat-x;
+} */
+
+/* Для хрома */
+
+/* .rating-group:focus-within {
+outline: solid 0.2em #4a90e2;
+outline-offset: 0.2em;
+} */
+
+
+/* Star */
+/* .rating-star {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 2em;
+    background-size: 2em auto;
+    background-repeat: repeat-x;
+    font-size: inherit; */
+    /* background-color: darkgray; */
+    /* -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
+}
+
+.rating-star:focus {
+    outline: none;
+} */
+
+/* Для еджа */
+/* .rating-star:focus ~ .rating-focus {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    outline: solid 0.2em #4a90e2;
+    outline-offset: 0.2em;
+}
+
+.rating-star:checked,
+.rating-star:hover {
+    background-image: url(../image/on.svg);
+}
+
+.rating-star:hover ~ .rating-star {
+    background-image: url(../image/off.svg);
+} */
+
+/* Options */
+/* .rating-star:nth-of-type(1) {
+    z-index: 5;
+    width: 2em;
+}
+
+.rating-star:nth-of-type(2) {
+    z-index: 4;
+    width: 4em;
+}
+
+.rating-star:nth-of-type(3) {
+    z-index: 3;
+    width: 6em;
+}
+
+.rating-star:nth-of-type(4) {
+    z-index: 2;
+    width: 8em;
+}
+
+.rating-star:nth-of-type(5) {
+    z-index: 1;
+    width: 10em;
+}   */
+
+
+
+
+
+
+/* for e11 */
+
+
+
 body {
     margin: 0;
     padding: 25px;
@@ -35,9 +145,31 @@ padding: 0;
     width: 10em;
     height: 2em;
     background-image: url(../image/off.svg);
-    background-size: 2em auto;
+    background-size: 2em 1.9em;
     background-repeat: repeat-x;
 }
+
+/* Input */
+
+.rating-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.rating-input:focus ~ .rating-focus {
+    position: absolute;
+    top: -0.2em;
+    right: -0.2em;
+    bottom: -0.2em;
+    left: -0.2em;
+    z-index: -1;
+    outline: solid 0.2em #4a90e2;
+    
+}
+
 
 /* Для хрома */
 
@@ -54,7 +186,7 @@ outline-offset: 0.2em;
     left: 0;
     margin: 0;
     height: 2em;
-    background-size: 2em auto;
+    background-size: 2em 1.9em;
     background-repeat: repeat-x;
     font-size: inherit;
     /* background-color: darkgray; */
@@ -68,18 +200,9 @@ outline-offset: 0.2em;
 }
 
 /* Для еджа */
-.rating-star:focus ~ .rating-focus {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    outline: solid 0.2em #4a90e2;
-    outline-offset: 0.2em;
-}
 
-.rating-star:checked,
+
+.rating-input:checked + .rating-star,
 .rating-star:hover {
     background-image: url(../image/on.svg);
 }
