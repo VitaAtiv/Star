@@ -39,10 +39,12 @@ padding: 0;
     background-repeat: repeat-x;
 }
 
-.rating-group:focus-within {
+/* Для хрома */
+
+/* .rating-group:focus-within {
 outline: solid 0.2em #4a90e2;
 outline-offset: 0.2em;
-}
+} */
 
 
 /* Star */
@@ -63,6 +65,18 @@ outline-offset: 0.2em;
 
 .rating-star:focus {
     outline: none;
+}
+
+/* Для еджа */
+.rating-star:focus ~ .rating-focus {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    outline: solid 0.2em #4a90e2;
+    outline-offset: 0.2em;
 }
 
 .rating-star:checked,
